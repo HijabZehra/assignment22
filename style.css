@@ -1,0 +1,139 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+:root {--red: rgb(255, 0, 0);}
+
+header {width: 100%;}
+
+.header {display: flex;
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        z-index: 999;}
+
+.logo {width: 50%;
+        text-align: left;}
+
+.logo img {width: 180px;
+            margin: 40px;}
+
+.signin {width: 50%;
+        text-align: right;}
+
+.signin button {background-color: var(--red);
+                width: 90px;
+                height: 35px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 15px;}
+
+.signin a {text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding-right: 21px;}
+
+.header button  {position: relative;
+                top: 20px;
+                right: 50px;
+                text-align: right;}
+
+.background {
+            height: 800px;
+            width: 100%;
+            background:url(https://assets.nflxext.com/ffe/siteui/vlv3/59e045df-814d-4342-bf9d-e62ba23e916a/f4316d9f-9aee-49eb-9398-8bdf3296eba8/PK-en-20220418-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            background-position: contain;
+            background-size: 100%;
+            background-blend-mode: darken;
+            color: white;
+            z-index: 1;
+            position: relative;
+        }
+
+.background:after{
+        content: "";
+        position: absolute;
+        background-image:  radial-gradient(transparent,#000);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+.main {position: absolute;
+        top: 250px;
+        width: 50%;
+        left: 25%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;}
+
+.main h1 {font-size: 70px;
+            margin-bottom: 15px;}
+
+.main h2 {font-size: 25px;
+            margin-bottom: 15px;}
+
+.main p {margin-bottom: 15px;}
+
+.main input {height: 60px;}
+
+.input1 {width: 425px;
+        border: none;
+        margin-right: 0px;}
+
+.input2 {width: 185px;
+        background-color: var(--red);
+        color: white;
+        font-weight: bold;
+        padding: 0px;
+        font-size: 15px;
+        margin-left: 0px;
+        box-sizing: border-box;
+        border: none;}
+
+/* @media (max-width:480px) {
+    .header {display: flex;
+            flex-wrap: wrap;}
+
+    .logo {width: 100%;
+        text-align: left;}
+
+    .signin {width: 100%;
+            text-align: center;}
+
+    .main {
+        position: absolute;
+        width: 100%;
+        left: 25%;
+}
+
+    .input1 {width: 185px;}
+            
+    .input2 {width: 150px;}
+}
+
+@media (max-width:720px) {
+    .logo {
+        width: 100%;
+        text-align: left;
+}
+
+    .signin {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+}
+
+    .main {     
+        position: absolute;
+        width: 100%;
+        left: 25%;
+}
+
+    .input1 {width: 185px;}
+            
+    .input2 {width: 150px;}
+} */
